@@ -2,6 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('/fonts/AvenirLTStd-Medium.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('/fonts/AvenirLTStd-MediumOblique.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CreamCake';
+  src: url('/fonts/CreamCake.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINCondensed';
+  src: url('/fonts/DINCondensed-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-SemiBold.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('/fonts/HelveticaNeueLTStd-MdCn.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('/fonts/LeagueGothic-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Interstate';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/InterstateRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'InterstateBold';
+  font-style: bold;
+  font-weight: normal;
+  src: url('/fonts/InterstateBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'InterstateBlack';
+  font-style: bolder;
+  font-weight: normal;
+  src: url('/fonts/InterstateBlack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Garamond';
+  font-style: bolder;
+  font-weight: normal;
+  src: url('/fonts/Garamond.woff') format('woff');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,6 +103,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.bg-hero {
+  @apply bg-repeat bg-[750px_auto] bg-[url(/sand.png)];
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
