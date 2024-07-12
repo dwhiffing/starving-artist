@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="flex h-[136px] flex-col gap-8 p-5">
+    <footer className="flex flex-col gap-8 border-t border-[#222] px-5 py-10 text-white">
       <div className="flex items-center justify-center gap-6 md:gap-12">
         {SOCIAL_LINKS.map((link) => (
           <Link key={link.image} href={link.link} target="_blank">

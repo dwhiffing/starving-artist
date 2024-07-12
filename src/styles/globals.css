@@ -3,80 +3,80 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'AvenirLTStd';
-  src: url('/fonts/AvenirLTStd-Medium.otf');
+  font-family: "AvenirLTStd";
+  src: url("/fonts/AvenirLTStd-Medium.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'AvenirLTStd';
-  src: url('/fonts/AvenirLTStd-MediumOblique.otf');
+  font-family: "AvenirLTStd";
+  src: url("/fonts/AvenirLTStd-MediumOblique.otf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'CreamCake';
-  src: url('/fonts/CreamCake.ttf');
+  font-family: "CreamCake";
+  src: url("/fonts/CreamCake.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINCondensed';
-  src: url('/fonts/DINCondensed-Regular.otf');
+  font-family: "DINCondensed";
+  src: url("/fonts/DINCondensed-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('/fonts/Gilroy-SemiBold.otf');
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-SemiBold.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url('/fonts/HelveticaNeueLTStd-MdCn.otf');
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueLTStd-MdCn.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'LeagueGothic';
-  src: url('/fonts/LeagueGothic-Regular.otf');
+  font-family: "LeagueGothic";
+  src: url("/fonts/LeagueGothic-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Interstate';
+  font-family: "Interstate";
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/InterstateRegular.woff') format('woff');
+  src: url("/fonts/InterstateRegular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'InterstateBold';
+  font-family: "InterstateBold";
   font-style: bold;
   font-weight: normal;
-  src: url('/fonts/InterstateBold.woff') format('woff');
+  src: url("/fonts/InterstateBold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'InterstateBlack';
+  font-family: "InterstateBlack";
   font-style: bolder;
   font-weight: normal;
-  src: url('/fonts/InterstateBlack.woff') format('woff');
+  src: url("/fonts/InterstateBlack.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Garamond';
+  font-family: "Garamond";
   font-style: bolder;
   font-weight: normal;
-  src: url('/fonts/Garamond.woff') format('woff');
+  src: url("/fonts/Garamond.woff") format("woff");
 }
 
 :root {
@@ -103,8 +103,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.flex-col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
 .bg-hero {
-  @apply bg-repeat bg-[750px_auto] bg-[url(/sand.png)];
+  @apply bg-[url(/sand.png)] bg-[750px_auto] bg-repeat;
 }
 @layer utilities {
   .text-balance {
