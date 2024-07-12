@@ -10,7 +10,23 @@ export default function Home() {
     <>
       <Head>
         <title>The Starving Artist Myth - By Mark J. Jones</title>
-        <meta property="og:title" content="My page title" key="title" />
+        <meta property="og:type" content="book" />
+        <meta
+          property="og:title"
+          content="The Starving Artist Myth - By Mark J. Jones"
+        />
+        <meta property="og:url" content="https://starving-artist.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://starving-artist.vercel.app/social/og.jpg"
+        />
+        <meta
+          property="og:description"
+          content="In The Starving Artist Myth, Mark J. Jones addresses the doubt about opportunities in the creative economy by getting at the roots of the stereotype and answering the what, the why, and the how of achieving career goals. Featuring interviews of artists across the spectrum of creative fields and a practical career guide, The Starving Artist Myth lays out a manual for creative career success in a post-pandemic world."
+        />
+        <meta property="book:isbn" content="9781459753846" />
+        <meta property="book:author" content="Mark J Jones" />
+        <meta property="book:release_date" content="2024-08-20" />
       </Head>
 
       <main className="min-w-[375px] text-black">
