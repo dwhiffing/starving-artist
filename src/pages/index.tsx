@@ -10,6 +10,8 @@ export default function Home() {
     <>
       <Head>
         <title>The Starving Artist Myth - By Mark J. Jones</title>
+        <link rel="preconnect" href="substackapi.com" />
+        <link rel="preconnect" href="https://substackapi.com" />
         <meta property="og:type" content="book" />
         <meta
           property="og:title"
@@ -51,6 +53,7 @@ function Hero() {
           sizes="100vw"
           className="object-contain"
           fill
+          priority
           src="/starving-artist-render.webp"
         />
       </div>
