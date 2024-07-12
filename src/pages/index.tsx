@@ -42,45 +42,35 @@ function NavBar() {
   );
 }
 
+const SOCIAL_LINKS = [
+  {
+    image: "/social/facebook.png",
+    link: "https://www.facebook.com/starvingartistmyth",
+  },
+  {
+    image: "/social/instagram.png",
+    link: "https://www.instagram.com/starvingartistmyth",
+  },
+  {
+    image: "/social/linkedin.png",
+    link: "https://www.linkedin.com/groups/14483593/",
+  },
+  { image: "/social/threads.png", link: "https://www.threads.net/@cstage" },
+  {
+    image: "/social/substack.png",
+    link: "https://starvingartistmyth.substack.com/",
+  },
+];
+
 function Footer() {
   return (
     <footer className="flex h-[136px] flex-col gap-8 p-5">
       <div className="flex items-center justify-center gap-6 md:gap-12">
-        <Link href="/">
-          <Image
-            width={40}
-            height={40}
-            alt="facebook"
-            src="/social/facebook.png"
-          />
-        </Link>
-        <Link href="/">
-          <Image
-            width={40}
-            height={40}
-            alt="instagram"
-            src="/social/instagram.png"
-          />
-        </Link>
-        <Link href="/">
-          <Image
-            width={40}
-            height={40}
-            alt="linkedin"
-            src="/social/linkedin.png"
-          />
-        </Link>
-        <Link href="/">
-          <Image
-            width={40}
-            height={40}
-            alt="tiktok"
-            src="/social/tik-tok.png"
-          />
-        </Link>
-        <Link href="/">
-          <Image width={40} height={40} alt="x" src="/social/twitter.png" />
-        </Link>
+        {SOCIAL_LINKS.map((link) => (
+          <Link key={link.image} href={link.link} target="_blank">
+            <Image width={40} height={40} alt="facebook" src={link.image} />
+          </Link>
+        ))}
       </div>
       <span className="text-center font-garamond">
         © {new Date().getFullYear()} Starving Artist Myth Enterprises Inc.
