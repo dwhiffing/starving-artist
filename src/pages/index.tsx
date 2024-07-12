@@ -49,9 +49,9 @@ function Hero() {
         <Image
           alt="book"
           sizes="100vw"
-          objectFit="contain"
+          className="object-contain"
           fill
-          src="/starving-artist-render.png"
+          src="/starving-artist-render.webp"
         />
       </div>
 

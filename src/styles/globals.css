@@ -94,6 +94,7 @@
 }
 
 body {
+  font-family: "Interstate", sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -108,7 +109,7 @@ body {
 }
 
 .bg-hero {
-  @apply bg-[url(/sand.png)] bg-[750px_auto] bg-repeat;
+  @apply bg-[#ea7739] bg-[url(/sand.webp)] bg-[370px_auto] bg-repeat;
 }
 @layer utilities {
   .text-balance {
