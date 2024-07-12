@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import { Button } from "../components/Button";
 import { Footer } from "../components/Footer";
 import { NavBar } from "../components/NavBar";
@@ -101,7 +102,19 @@ function Subscribe() {
           <span className="font-garamond text-xs">(conditions apply)</span>
         </p>
 
-        <Button href="/" label="Subscribe" />
+        <>
+          <div id="custom-substack-embed" />
+          <Script id="substack">
+            {`window.CustomSubstackWidget = {
+              substackUrl: "starvingartistmyth.substack.com",
+              placeholder: "example@gmail.com",
+              buttonText: "Subscribe",
+              theme: "custom",
+              colors: { primary: "#FADD27", input: "#000000", email: "#FFFFFF", text: "#000000" },
+            };`}
+          </Script>
+          <Script src="https://substackapi.com/widget.js" async />
+        </>
       </div>
     </div>
   );
