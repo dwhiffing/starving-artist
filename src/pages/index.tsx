@@ -50,7 +50,6 @@ function Hero() {
       <div className="relative aspect-square min-w-[350px] md:min-w-[450px] xl:min-w-[500px] 2xl:min-w-[600px]">
         <Image
           alt="book"
-          sizes="(max-width: 768px) 350px, (max-width: 1280px) 450px, (max-width: 1536px) 500px, 600px"
           className="object-contain"
           fill
           priority
