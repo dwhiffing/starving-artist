@@ -34,9 +34,11 @@ export default function Home() {
       <main className="min-w-[375px] text-black">
         <NavBar />
 
-        <Hero />
+        <div className="flex flex-col xl:h-screen xl:max-h-[1600px] xl:min-h-[940px]">
+          <Hero />
 
-        <Subscribe />
+          <Subscribe />
+        </div>
 
         <Footer />
       </main>
@@ -46,7 +48,7 @@ export default function Home() {
 
 function Hero() {
   return (
-    <div className="bg-hero flex-col-center px-6 py-10 lg:flex-row lg:px-12 lg:py-20 xl:h-[calc(100vh-400px)] xl:min-h-[950px]">
+    <div className="bg-hero flex-col-center flex-1 p-6 lg:p-12 xl:flex-row">
       <div className="relative aspect-square min-w-[350px] md:min-w-[450px] xl:min-w-[500px] 2xl:min-w-[600px]">
         <Image
           alt="book"
@@ -57,7 +59,7 @@ function Hero() {
         />
       </div>
 
-      <div className="flex-col-center max-w-3xl gap-y-8 text-center font-interstate text-xl lg:items-start lg:text-left">
+      <div className="flex-col-center max-w-3xl gap-y-8 text-center font-interstate text-xl xl:items-start xl:text-left">
         <div className="flex flex-col gap-2">
           <h2>
             “Mark Jones has written a classic. Accessible and erudite, laden
@@ -108,7 +110,7 @@ function Hero() {
 
 function Subscribe() {
   return (
-    <div className="bottom-0 bg-black p-10 text-white lg:sticky">
+    <div className="bg-black p-10 text-white">
       <div className="flex flex-col gap-y-6 text-center">
         <p className="-mb-3 font-garamond text-2xl">
           Subscribe to the Starving Artist Myth Newsletter and receive a free
