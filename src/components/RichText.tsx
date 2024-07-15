@@ -10,7 +10,7 @@ export const RichTextItem = ({ content }: { content: unknown }) => {
     <>
       {documentToReactComponents(content as Document, {
         renderNode: {
-          [types.BLOCKS.HEADING_2]: (node, children) => (
+          [types.BLOCKS.HEADING_1]: (node, children) => (
             <h1 className="text-6xl">{children}</h1>
           ),
           [types.BLOCKS.HEADING_2]: (node, children) => (
