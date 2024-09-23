@@ -7,7 +7,7 @@ import RichTextItem from "../RichText";
 
 export function HeroBlock(props: IHeroBlockFields) {
   return (
-    <div className="flex flex-col xl:h-screen xl:max-h-[1600px] xl:min-h-[940px]">
+    <div className="flex flex-col">
       <div className="bg-hero flex-col-center flex-1 p-6 md:p-8 lg:p-12 xl:flex-row">
         <div className="relative aspect-square min-w-[350px] md:min-w-[450px] xl:min-w-[500px] 2xl:min-w-[600px]">
           <Image
